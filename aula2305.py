@@ -14,5 +14,7 @@ dataframe.style.highlight_max(axis=0)
 st.write(dataframe)
 
 chart_data = pd.DataFrame(
-np.random.random(20,3),
-collumns=['a','b','c'])
+    np.random.random(20,3),
+    collumns=['a','b','c'])
+
+st.line_chart(chart_data)
