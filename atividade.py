@@ -1,10 +1,11 @@
-import streamlit as st
-import pandas as pd
+import streamlit as 
+import pandas as pd 
+st.title('tarefa do Josir')
+st.caption('Lavínia Franqueiro')
 
-st.title("articles(1).csv")
+df = pd.read_csv('marijuana.csv', sep =';')
+st.dataframe(df)
 
-csv_file = st.file_uploader("articles(1).csv", type=["csv"])
-
-if csv_file is not None:
-    df = pd.read_csv(csv_file)
-    st.write(df)
+#arquivo = open('marijuana.csv')
+#for linha in arquivo:
+#    st.write(linha)
