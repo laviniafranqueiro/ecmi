@@ -1,11 +1,12 @@
 import streamlit as 
 import pandas as pd 
+import csv
 st.title('tarefa do Josir')
 st.caption('Lavínia Franqueiro')
 
-df = pd.read_csv('marijuana.csv', sep =';')
+df = pd.read_csv('acidentes.csv', sep =';')
 st.dataframe(df)
 
-#arquivo = open('marijuana.csv')
+#arquivo = open('acidentes.csv')
 #for linha in arquivo:
 #    st.write(linha)
