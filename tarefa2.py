@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd 
-import csv
 st.title('tarefa do Josir')
 st.caption('Lavínia Franqueiro')
 
