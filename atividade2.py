@@ -1,7 +1,8 @@
-import streamlit as st
-import pandas as pd
-st.title('Trabalho csv e gráfico')
-st.caption('Lavínia')
+import streamlit as 
+import pandas as pd 
+import csv
+st.title('trabalho csv')
+st.caption('Lavínia Franqueiro')
 
-df = pd.read_csv('acidentes.csv', sep=';')
-st.dataframe(df) 
+df = pd.read_csv('acidentes.csv', sep =';')
+st.dataframe(df)
