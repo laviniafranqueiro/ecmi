@@ -4,7 +4,7 @@ import csv
 st.title('tarefa do Josir')
 st.caption('Lavínia Franqueiro')
 
-df = pd.read_csv('acidentes.csv', sep =';')
+df = pd.read_csv('acidentes.csv', sep =',')
 st.dataframe(df)
 
 #arquivo = open('acidentes.csv')
