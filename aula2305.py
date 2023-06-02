@@ -6,10 +6,17 @@ st.title('Teste ECMI 2')
 
 st.write("Tabela")
 
+lista_salario = [10000,15000,490,7688]
+lista_nomes = ['Josir', 'Bruno', 'Bruna', 'Anna']
+
+texto = st.text_input("Digite um nome") 
+salario = float(st.text_input("Digite um salario", "0"))
+
 dataframe = pd.DataFrame({
-    'Nome': ['Josir', 'Bruno', 'Bruna', 'Anna'],
-    'Salário': [10000, 15000, 490, 7688]
+    'Nome': lista_nomes,
+    'Salário': lista_salario
 })
+
 dataframe.style.highlight_max(axis=0)
 
 st.write(dataframe)
